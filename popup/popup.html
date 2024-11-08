@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Easy Encrypt</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <select id="algorithm">
+        <option value="AES">AES</option>
+        <option value="DES">DES</option>
+        <option value="Base64">Base64</option>
+        <option value="SHA256">SHA-256</option>
+      </select>
+      <input type="password" id="secretKey" placeholder="Secret Key" />
+    </div>
+    
+    <div class="content">
+      <textarea id="inputText" placeholder="Enter text to encrypt/decrypt"></textarea>
+      <div class="buttons">
+        <button id="encryptBtn">Encrypt</button>
+        <button id="decryptBtn">Decrypt</button>
+      </div>
+      <textarea id="outputText" placeholder="Result" readonly></textarea>
+    </div>
+    
+    <div class="footer">
+      <span id="copyStatus" class="hidden">Copied to clipboard!</span>
+    </div>
+  </div>
+
+  <script src="../thirdParty/jquery-3.6.0.min.js"></script>
+  <script src="../thirdParty/crypto-js.min.js"></script>
+  <script src="../js/crypto.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html> 
