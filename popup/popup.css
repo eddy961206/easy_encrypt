@@ -4,6 +4,7 @@ body {
   font-family: 'Segoe UI', 'Roboto', sans-serif;
   background: #f8f9fa;
   margin: 0;
+  user-select: none;
 }
 
 .container {
@@ -155,4 +156,24 @@ button:active {
 /* 선택 스타일링 */
 ::selection {
   background: rgba(3, 102, 214, 0.1);
-} 
+}
+
+/* 자동 복사 옵션 스타일 */
+.options {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.options input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
