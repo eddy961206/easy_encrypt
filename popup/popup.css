@@ -160,7 +160,7 @@ button:active {
 
 /* 자동 복사 옵션 스타일 */
 .options {
-  margin-top: 10px;
+  margin-top: -10px;
   text-align: left;
 }
 
